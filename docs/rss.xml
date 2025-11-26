@@ -1,5 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://gbvv3.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://gbvv3.github.io</link></image><lastBuildDate>Wed, 26 Nov 2025 12:45:52 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>whireshak抓包</title><link>https://gbvv3.github.io/post/whireshak-zhua-bao.html</link><description>打开电脑，进入cmd
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://gbvv3.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://gbvv3.github.io</link></image><lastBuildDate>Wed, 26 Nov 2025 12:49:29 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>搜索引擎和子域名收集</title><link>https://gbvv3.github.io/post/sou-suo-yin-qing-he-zi-yu-ming-shou-ji.html</link><description>与ZoomEye类似的搜索引擎有shodan,FOFA,Censys,binaryEdge,Hunter,google hacking.
+
+&lt;img width='594' height='1018' alt='Image' src='https://github.com/user-attachments/assets/24e0c159-313b-4e19-af10-5ee1acd76bdc' /&gt;
+
+&lt;img width='454' height='812' alt='Image' src='https://github.com/user-attachments/assets/c9830253-2dc6-4b25-8de5-47e47089be0a' /&gt;
+
+其中，FOFA适合特定区域和中文界面，shodan适合物联网，Censys适合证书和精准配置分析，Quack提供漏洞利用和威胁情报。</description><guid isPermaLink="true">https://gbvv3.github.io/post/sou-suo-yin-qing-he-zi-yu-ming-shou-ji.html</guid><pubDate>Wed, 26 Nov 2025 12:48:56 +0000</pubDate></item><item><title>whireshak抓包</title><link>https://gbvv3.github.io/post/whireshak-zhua-bao.html</link><description>打开电脑，进入cmd
 
 &lt;img width='2394' height='1268' alt='Image' src='https://github.com/user-attachments/assets/23512338-7114-48b8-aca1-c2c4d14fba67' /&gt;
 
