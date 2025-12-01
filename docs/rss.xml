@@ -1,5 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://gbvv3.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://gbvv3.github.io</link></image><lastBuildDate>Mon, 01 Dec 2025 16:27:22 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>对等保2.0的理解</title><link>https://gbvv3.github.io/post/dui-deng-bao-2.0-de-li-jie.html</link><description>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://gbvv3.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://gbvv3.github.io</link></image><lastBuildDate>Mon, 01 Dec 2025 16:35:50 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>笑脸漏洞和子网扫描</title><link>https://gbvv3.github.io/post/xiao-lian-lou-dong-he-zi-wang-sao-miao.html</link><description>打开kali和靶机，进入终端输入ifconfig查看ip为192.168.10.130
+
+&lt;img width='2560' height='1512' alt='Image' src='https://github.com/user-attachments/assets/33cbfddb-fcb4-4ec5-a2aa-aa3c196a5437' /&gt;
+
+输入nmap 192.168.10.130/24 对整个子网进行扫描，发现6200端口没显示，并且靶机地址为192.168.10.131，并且21端口打开了（21端口为FTP服务，其上有打开6200端口的代码）
+
+&lt;img width='2560' height='1492' alt='Image' src='https://github.com/user-attachments/assets/2eb43080-4755-4eec-8bd4-59785eca91a1' /&gt;
+输入nmap 192.168.10.131 -p 6200 查看6200端口情况，发现端口为关闭状态
+
+&lt;img width='2560' height='1440' alt='Image' src='https://github.com/user-attachments/assets/0561c212-50b6-490f-a40e-fb6f8cf2580c' /&gt;
+因此尝试用netcat连接21的端口，使之执行响应代码开放6200端口，输入nc 192.168.10.131 21
+完成后输入nmap 192.168.10.131 -p 6200
+可以发现端口处于开放状态
+。</description><guid isPermaLink="true">https://gbvv3.github.io/post/xiao-lian-lou-dong-he-zi-wang-sao-miao.html</guid><pubDate>Mon, 01 Dec 2025 16:35:18 +0000</pubDate></item><item><title>对等保2.0的理解</title><link>https://gbvv3.github.io/post/dui-deng-bao-2.0-de-li-jie.html</link><description>
 等保2.0标志着中国网络安全治理从 “被动防护”转向“主动防控” ，从 “单点防御”转向“体系化防御” 。</description><guid isPermaLink="true">https://gbvv3.github.io/post/dui-deng-bao-2.0-de-li-jie.html</guid><pubDate>Mon, 01 Dec 2025 15:40:06 +0000</pubDate></item><item><title>UDP和TCP53端口的区别</title><link>https://gbvv3.github.io/post/UDP-he-TCP53-duan-kou-de-qu-bie.html</link><description>1.TCP53:
 用途：长查询（DNS区域传输，超过512bit）,DNS服务器同步
 传输特性：面向连接，可靠传输（三次握手，重传机制），速度较慢
