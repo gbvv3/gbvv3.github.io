@@ -1,5 +1,16 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://gbvv3.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://gbvv3.github.io</link></image><lastBuildDate>Mon, 01 Dec 2025 15:23:06 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>VM有不同网卡的原因</title><link>https://gbvv3.github.io/post/VM-you-bu-tong-wang-qia-de-yuan-yin.html</link><description>1.VMware默认net模式，用于访问外网
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://gbvv3.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://gbvv3.github.io</link></image><lastBuildDate>Mon, 01 Dec 2025 15:34:16 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>UDP和TCP53端口的区别</title><link>https://gbvv3.github.io/post/UDP-he-TCP53-duan-kou-de-qu-bie.html</link><description>1.TCP53:
+用途：长查询（DNS区域传输，超过512bit）,DNS服务器同步
+传输特性：面向连接，可靠传输（三次握手，重传机制），速度较慢
+数据限制：无长度限制
+
+2.UDP53:
+用途：短查询（域名解析ip）,日常DNS请求
+传输特性：无连接，不可靠传输（无握手，丢包不重传），速度快
+数据限制：默认小于512bit，超过用TCP或EDNS
+
+UDP是DNS首选
+。</description><guid isPermaLink="true">https://gbvv3.github.io/post/UDP-he-TCP53-duan-kou-de-qu-bie.html</guid><pubDate>Mon, 01 Dec 2025 15:33:51 +0000</pubDate></item><item><title>VM有不同网卡的原因</title><link>https://gbvv3.github.io/post/VM-you-bu-tong-wang-qia-de-yuan-yin.html</link><description>1.VMware默认net模式，用于访问外网
 2.默认双网卡配置
 NAT网卡：通过物理机访问外网，显示为以太网（ip通常为：192.168.x.x）
 仅主机网卡：只允许虚拟机与物理机，其他虚拟机互通，不联网，显示为192.168.y.y。</description><guid isPermaLink="true">https://gbvv3.github.io/post/VM-you-bu-tong-wang-qia-de-yuan-yin.html</guid><pubDate>Mon, 01 Dec 2025 15:22:35 +0000</pubDate></item><item><title>VM出现不同网卡的原因</title><link>https://gbvv3.github.io/post/VM-chu-xian-bu-tong-wang-qia-de-yuan-yin.html</link><description>1.VMware默认net模式，用于访问外网
