@@ -14,31 +14,27 @@
 
 <img width='2560' height='1512' alt='Image' src='https://github.com/user-attachments/assets/33cbfddb-fcb4-4ec5-a2aa-aa3c196a5437' />
 
-输入nmap 192.168.10.130/24 对整个子网进行扫描，发现6200端口没显示，并且靶机地址为192.168.10.131，并且21端口打开了（21端口为FTP服务，其上有打开6200端口的代码）
+输入nmap 192.168.10.130/24 对整个子网进行扫描，发现6200端口没显示，并且靶机地址为192.168.10.131，并且21端口打开了（21端口为FTP服务，其上有打开6200端口的代码，如果6200没开放，可以操作21端口来打开6200端口）
 
 <img width='2560' height='1492' alt='Image' src='https://github.com/user-attachments/assets/2eb43080-4755-4eec-8bd4-59785eca91a1' />
+
 输入nmap 192.168.10.131 -p 6200 查看6200端口情况，发现端口为关闭状态
 
 <img width='2560' height='1440' alt='Image' src='https://github.com/user-attachments/assets/0561c212-50b6-490f-a40e-fb6f8cf2580c' />
-因此尝试用netcat连接21的端口，使之执行响应代码开放6200端口，输入nc 192.168.10.131 21
-完成后输入nmap 192.168.10.131 -p 6200
-可以发现端口处于开放状态
-。">
+因此尝试用netcat连接21的端口，检查是否存在笑脸漏洞。">
 <meta property="og:title" content="笑脸漏洞和子网扫描">
 <meta property="og:description" content="打开kali和靶机，进入终端输入ifconfig查看ip为192.168.10.130
 
 <img width='2560' height='1512' alt='Image' src='https://github.com/user-attachments/assets/33cbfddb-fcb4-4ec5-a2aa-aa3c196a5437' />
 
-输入nmap 192.168.10.130/24 对整个子网进行扫描，发现6200端口没显示，并且靶机地址为192.168.10.131，并且21端口打开了（21端口为FTP服务，其上有打开6200端口的代码）
+输入nmap 192.168.10.130/24 对整个子网进行扫描，发现6200端口没显示，并且靶机地址为192.168.10.131，并且21端口打开了（21端口为FTP服务，其上有打开6200端口的代码，如果6200没开放，可以操作21端口来打开6200端口）
 
 <img width='2560' height='1492' alt='Image' src='https://github.com/user-attachments/assets/2eb43080-4755-4eec-8bd4-59785eca91a1' />
+
 输入nmap 192.168.10.131 -p 6200 查看6200端口情况，发现端口为关闭状态
 
 <img width='2560' height='1440' alt='Image' src='https://github.com/user-attachments/assets/0561c212-50b6-490f-a40e-fb6f8cf2580c' />
-因此尝试用netcat连接21的端口，使之执行响应代码开放6200端口，输入nc 192.168.10.131 21
-完成后输入nmap 192.168.10.131 -p 6200
-可以发现端口处于开放状态
-。">
+因此尝试用netcat连接21的端口，检查是否存在笑脸漏洞。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://gbvv3.github.io/post/xiao-lian-lou-dong-he-zi-wang-sao-miao.html">
 <meta property="og:image" content="https://github.githubassets.com/favicons/favicon.svg">
@@ -101,13 +97,15 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="content">
 <div class="markdown-body" id="postBody"><p>打开kali和靶机，进入终端输入ifconfig查看ip为192.168.10.130</p>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/33cbfddb-fcb4-4ec5-a2aa-aa3c196a5437"><img width="2000" height="1512" alt="Image" src="https://github.com/user-attachments/assets/33cbfddb-fcb4-4ec5-a2aa-aa3c196a5437" style="max-width: 100%; height: auto; max-height: 1512px;"></a></p>
-<p>输入nmap 192.168.10.130/24 对整个子网进行扫描，发现6200端口没显示，并且靶机地址为192.168.10.131，并且21端口打开了（21端口为FTP服务，其上有打开6200端口的代码）</p>
+<p>输入nmap 192.168.10.130/24 对整个子网进行扫描，发现6200端口没显示，并且靶机地址为192.168.10.131，并且21端口打开了（21端口为FTP服务，其上有打开6200端口的代码，如果6200没开放，可以操作21端口来打开6200端口）</p>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/2eb43080-4755-4eec-8bd4-59785eca91a1"><img width="2000" height="1492" alt="Image" src="https://github.com/user-attachments/assets/2eb43080-4755-4eec-8bd4-59785eca91a1" style="max-width: 100%; height: auto; max-height: 1492px;"></a></p>
-输入nmap 192.168.10.131 -p 6200 查看6200端口情况，发现端口为关闭状态
+<p>输入nmap 192.168.10.131 -p 6200 查看6200端口情况，发现端口为关闭状态</p>
 <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/0561c212-50b6-490f-a40e-fb6f8cf2580c"><img width="2000" height="1440" alt="Image" src="https://github.com/user-attachments/assets/0561c212-50b6-490f-a40e-fb6f8cf2580c" style="max-width: 100%; height: auto; max-height: 1440px;"></a></p>
-因此尝试用netcat连接21的端口，使之执行响应代码开放6200端口，输入nc 192.168.10.131 21
-完成后输入nmap 192.168.10.131 -p 6200
-可以发现端口处于开放状态</div>
+因此尝试用netcat连接21的端口，检查是否存在笑脸漏洞。
+<p>输入nc 192.168.10.131 21，输入的用户名末尾加上：），如果存在笑脸漏洞，FTP检测到：）会开放6200</p>
+<p>完成后输入nmap 192.168.10.131 -p 6200，查看端口情况<br>
+可以发现端口处于开放状态，说明存在笑脸漏洞。</p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/0530cf89-adff-48d2-a89b-97ddde7289ca"><img width="2000" height="1484" alt="Image" src="https://github.com/user-attachments/assets/0530cf89-adff-48d2-a89b-97ddde7289ca" style="max-width: 100%; height: auto; max-height: 1484px;"></a></p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
