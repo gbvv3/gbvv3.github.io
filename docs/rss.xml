@@ -1,5 +1,38 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://gbvv3.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://gbvv3.github.io</link></image><lastBuildDate>Tue, 02 Dec 2025 05:20:50 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>笑脸漏洞和子网扫描</title><link>https://gbvv3.github.io/post/xiao-lian-lou-dong-he-zi-wang-sao-miao.html</link><description>打开kali和靶机，进入终端输入ifconfig查看ip为192.168.10.130
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Blog Title</title><link>https://gbvv3.github.io</link><description>Blog description</description><copyright>Blog Title</copyright><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>https://github.githubassets.com/favicons/favicon.svg</url><title>avatar</title><link>https://gbvv3.github.io</link></image><lastBuildDate>Wed, 24 Dec 2025 08:54:55 +0000</lastBuildDate><managingEditor>Blog Title</managingEditor><ttl>60</ttl><webMaster>Blog Title</webMaster><item><title>远程控制</title><link>https://gbvv3.github.io/post/yuan-cheng-kong-zhi.html</link><description>1.Easy File Sharing Web Server漏洞利用
+
+目标主机打开该软件
+
+&lt;img width='1276' height='788' alt='Image' src='https://github.com/user-attachments/assets/a2a06e8b-9089-456e-b5fa-298c2127a318' /&gt;
+
+对目标进行扫描，发现开放Easy File Web Server服务
+
+&lt;img width='1200' height='584' alt='Image' src='https://github.com/user-attachments/assets/c532b6ed-9b42-4900-ae8a-e0a7861f82bf' /&gt;
+
+输入searchsploit easy file sharing,查看该服务的漏洞
+执行python脚本发起攻击，输入：python2  路径  目标ip  端口
+
+&lt;img width='1068' height='528' alt='Image' src='https://github.com/user-attachments/assets/c4f8b88a-62ad-4b28-9d51-88a2d3d907c3' /&gt;
+
+目标主机弹出计算机
+
+&lt;img width='736' height='458' alt='Image' src='https://github.com/user-attachments/assets/0dc0af47-5650-4775-9e07-4132ba215d02' /&gt;
+
+2.木马上传
+
+创建文本，写入一句话木马，后缀改为.php
+
+&lt;img width='714' height='230' alt='Image' src='https://github.com/user-attachments/assets/ad2da048-b68d-4644-8a56-2866c58b5f27' /&gt;
+进入DVWA靶场将文件上传，得到文件路径
+
+&lt;img width='1908' height='722' alt='Image' src='https://github.com/user-attachments/assets/3dee0dae-def0-4a31-8496-e082ac8a02bd' /&gt;
+打开中国蚁剑，将完整目录填写，密码为POST传的参数名，这里为cmd
+
+&lt;img width='2008' height='1296' alt='Image' src='https://github.com/user-attachments/assets/6d1b4706-0669-41cd-9ddf-e1ecb74d3f57' /&gt;
+连接成功，得到网站权限
+
+&lt;img width='2086' height='1394' alt='Image' src='https://github.com/user-attachments/assets/f2edd120-06ea-434f-bbba-b85d38351c37' /&gt;
+。</description><guid isPermaLink="true">https://gbvv3.github.io/post/yuan-cheng-kong-zhi.html</guid><pubDate>Wed, 24 Dec 2025 08:54:23 +0000</pubDate></item><item><title>笑脸漏洞和子网扫描</title><link>https://gbvv3.github.io/post/xiao-lian-lou-dong-he-zi-wang-sao-miao.html</link><description>打开kali和靶机，进入终端输入ifconfig查看ip为192.168.10.130
 
 &lt;img width='2560' height='1512' alt='Image' src='https://github.com/user-attachments/assets/33cbfddb-fcb4-4ec5-a2aa-aa3c196a5437' /&gt;
 
